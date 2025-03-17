@@ -7,9 +7,6 @@ function adicionarAmigo(){
     let textoInseridoPeloUsuario = document.getElementById("amigo").value;// Capturar o valor do campo de entrada: Utilize document.getElementById ou document.querySelector
     if(textoInseridoPeloUsuario == false){ // garantindo que o campo não esteja vazio.
         alert("Por favor, insira um nome.");
-        for(let x = 0; x<amigos.length; x++){
-            console.log("posicao: "+x+" valor: "+amigos[x]);
-        }
     }else{
         amigos.push(textoInseridoPeloUsuario);//armazena os nomes dos amigos usando o método .push().
         limparCampo();// Limpar o campo de entrada
